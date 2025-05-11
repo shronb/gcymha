@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - GCYMHA</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Global Chinese Youth Mental Health</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="members.html">Members</a>
+      <a href="resources.html">Resources</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>What We Do</h2>
+      <ul>
+        <li>Share mental health resources with at-risk ethnic groups</li>
+        <li>Break down cultural barriers and stigma using personal stories</li>
+        <li>Provide psychoeducation online and in person to underserved populations</li>
+        <li>Introduce mental health and psychological sciences as early as junior high</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Our Program</h2>
+      <p>
+        The <strong>Mental Health For Youth</strong> program supports future leaders in psychology. We offer:
+      </p>
+      <ol>
+        <li>Help with starting a school or community psychology club</li>
+        <li>Learning through research and volunteering opportunities</li>
+        <li>Support in planning academic and career goals in mental health</li>
+      </ol>
+      <p>
+        Our international team of high school students leads events, runs workshops, and shares educational content across the U.S., Canada, U.K., and China.
+      </p>
+    </section>
+
+    <section>
+      <h2>About the Organization</h2>
+      <p>
+        The <strong>Global Chinese Youth Mental Health Association</strong> is a licensed nonprofit run by undergraduate students. We offer free mentorship to high school students interested in psychology and help them build their own psychology societies. We also run community workshops and share mental health content through social media to educate the public.
+      </p>
+    </section>
+
+    <section>
+      <h2>Our Core Values</h2>
+      <ul>
+        <li><strong>Personal Care</strong>: Caring for yourself physically and emotionally</li>
+        <li><strong>Community Care</strong>: Building a supportive, kind environment</li>
+        <li><strong>Mental Health</strong>: Prioritizing wellness and education</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Global Chinese Youth Mental Health Association | Founded by Yixuan Wang</p>
+  </footer>
+</body>
+</html>
