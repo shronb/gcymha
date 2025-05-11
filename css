@@ -1,16 +1,18 @@
+/* Sky Blue + Vibrant Yellow Theme */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f6fa;
-  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e6f7ff;
+  color: #00334e;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
 header {
-  background-color: #004d7a;
+  background-color: #009ddc;
   color: white;
-  padding: 1em;
   text-align: center;
+  padding: 1.5em 1em;
 }
 
 nav {
@@ -18,20 +20,40 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: #fff;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 12px;
+  font-weight: bold;
+}
+
+nav a.active, nav a:hover {
+  color: #ffdf00;
 }
 
 main {
   padding: 2em;
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 77, 122, 0.1);
+}
+
+h2 {
+  color: #006699;
+  border-left: 5px solid #ffdf00;
+  padding-left: 10px;
+}
+
+ul, ol {
+  margin-left: 1.5em;
 }
 
 footer {
-  background-color: #e0e0e0;
+  background-color: #ffdf00;
   text-align: center;
   padding: 1em;
-  margin-top: 2em;
+  font-weight: bold;
+  color: #004466;
+  margin-top: 3em;
 }
