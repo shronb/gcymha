@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Global Chinese Youth Mental Health</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Global Chinese Youth Mental Health</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="members.html">Members</a>
+      <a href="resources.html">Resources</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Welcome to the Mental Health for Youth Program</h2>
+      <p>
+        Our mission is to spread mental health awareness globally by supporting future leaders in psychological sciences. 
+        We offer mentorship and resources at no cost to passionate high school students.
+      </p>
+      <ul>
+        <li>Create a club at your school or community</li>
+        <li>Learn about psychological sciences</li>
+        <li>Get guidance applying to psychology programs</li>
+      </ul>
+      <p>
+        We're global — with active students in the U.S., Canada, U.K., and China. 
+        Join us and help support others with kindness!
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Global Chinese Youth Mental Health | Founded by Yixuan Wang</p>
+  </footer>
+</body>
+</html>
