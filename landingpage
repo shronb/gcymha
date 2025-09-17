@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Chinese Youth Mental Health Association</title>
+  <style>
+    /* Color Palette */
+    :root {
+      --primary-blue: #3b82f6;   /* Calm blue */
+      --secondary-yellow: #facc15; /* Friendly yellow */
+      --light-blue: #e0f2fe;
+      --dark-blue: #1e40af;
+      --text-dark: #1f2937;
+      --text-light: #f9fafb;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--light-blue);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary-blue);
+      color: var(--text-light);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: var(--text-light);
+      text-decoration: none;
+      margin-left: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--secondary-yellow);
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(to bottom right, var(--primary-blue), var(--dark-blue));
+      color: var(--text-light);
+    }
+
+    .hero img {
+      max-width: 250px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin-bottom: 2rem;
+    }
+
+    .cta-btn {
+      background: var(--secondary-yellow);
+      color: var(--dark-blue);
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background: #fcd34d;
+      transform: scale(1.05);
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h3 {
+      color: var(--dark-blue);
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      gap: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      background: var(--dark-blue);
+      color: var(--text-light);
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GCYMHA</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#programs">Programs</a>
+      <a href="#mission">Mission</a>
+      <a href="#join">Join</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <!-- Replace this with a hero image or logo -->
+    <img src="your-hero-image.png" alt="GCYMHA Logo / Hero">
+    <h2>Global Chinese Youth Mental Health Association</h2>
+    <p>Supporting future leaders of psychological sciences and spreading mental health awareness across communities worldwide.</p>
+    <button class="cta-btn">Join Us Today</button>
+  </section>
+
+  <section id="about" class="section">
+    <h3>About Us</h3>
+    <p>
+      GCYMHA aims to spread mental health awareness globally by supporting future leaders of psychological sciences. 
+      We provide mentorship and resources at no cost to passionate high school students who want to create psychology societies, 
+      learn about psychological sciences, and design academic or career goals in the mental health industry.
+    </p>
+  </section>
+
+  <section id="programs" class="section">
+    <h3>What We Do</h3>
+    <div class="grid grid-3">
+      <div class="card">
+        <h4>Resource Sharing</h4>
+        <p>We share mental health resources to at-risk ethnic groups and underserved populations both in person and online.</p>
+      </div>
+      <div class="card">
+        <h4>Breaking Barriers</h4>
+        <p>We tear down the cultural barriers of mental illness stigma with personal narratives and open discussions.</p>
+      </div>
+      <div class="card">
+        <h4>Education & Mentorship</h4>
+        <p>We provide psychoeducation, career planning, and mentorship to students from junior high onward.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="mission" class="section">
+    <h3>Our Mission</h3>
+    <p>
+      Our student-run, internationally based team organizes local events, provides online workshops, disseminates 
+      mental health content, and supports high school student psychology clubs on a regular basis. Together, we spread 
+      awareness and support others kindly by simply helping out.
+    </p>
+  </section>
+
+  <section id="join" class="section">
+    <h3>Get Involved</h3>
+    <p style="text-align: center;">
+      Whether you are a student, parent, or community member, you can make an impact. 
+      Join us in spreading mental health awareness and supporting future leaders in the field of psychology.
+    </p>
+    <div style="text-align: center; margin-top: 1.5rem;">
+      <button class="cta-btn">Become a Member</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Global Chinese Youth Mental Health Association. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
