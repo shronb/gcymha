@@ -1797,3 +1797,279 @@ p {
     }
 
 }
+/* =====================================
+   CRISIS & SUPPORT PAGE
+===================================== */
+
+.support-hero {
+    padding: 190px 0 100px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f7f5f0,
+            #e8f3f7
+        );
+}
+
+.support-hero h1 {
+    max-width: 900px;
+
+    font-size: clamp(3.5rem, 7vw, 6.5rem);
+    letter-spacing: -0.055em;
+
+    margin-bottom: 30px;
+}
+
+.support-hero > .container > p:last-child {
+    max-width: 700px;
+
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+
+/* Emergency */
+
+.emergency-banner {
+    padding: 55px 0;
+
+    background: var(--navy);
+    color: white;
+}
+
+.emergency-inner {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 50px;
+}
+
+.emergency-inner span {
+    color: var(--sky);
+
+    font-size: 0.75rem;
+    font-weight: 800;
+
+    letter-spacing: 0.14em;
+}
+
+.emergency-inner h2 {
+    max-width: 760px;
+
+    margin-top: 10px;
+
+    font-size: clamp(1.7rem, 3vw, 2.8rem);
+}
+
+
+/* Headings */
+
+.support-heading {
+    max-width: 800px;
+
+    margin-bottom: 60px;
+}
+
+.support-heading > p:last-child {
+    margin-top: 25px;
+
+    max-width: 700px;
+
+    font-size: 1.05rem;
+}
+
+
+/* Crisis resources */
+
+.support-resource-list {
+    border-top: 1px solid var(--line);
+}
+
+.support-resource {
+    display: grid;
+
+    grid-template-columns: 60px 1fr 230px;
+
+    gap: 35px;
+
+    padding: 35px 0;
+
+    align-items: start;
+
+    border-bottom: 1px solid var(--line);
+}
+
+.support-number {
+    color: var(--blue);
+
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.support-resource h3 {
+    margin-bottom: 10px;
+
+    font-size: 1.4rem;
+}
+
+.support-resource p {
+    max-width: 580px;
+}
+
+.support-actions {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 8px;
+}
+
+.support-actions a {
+    color: var(--blue);
+
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.support-actions a:hover {
+    text-decoration: underline;
+}
+
+
+/* Professional care */
+
+.support-two-column {
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 90px;
+}
+
+.support-two-column > div:last-child p {
+    margin-bottom: 20px;
+
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.support-note {
+    margin-top: 35px;
+
+    padding: 25px;
+
+    border-left: 3px solid var(--blue);
+
+    background: white;
+}
+
+
+/* Apps */
+
+.app-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+
+.app-grid div {
+    padding: 24px;
+
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+
+    font-weight: 700;
+}
+
+.app-disclaimer {
+    max-width: 800px;
+
+    margin-top: 30px;
+
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+
+/* Final disclaimer */
+
+.support-disclaimer {
+    padding: 90px 0;
+
+    background: var(--cream);
+}
+
+.support-disclaimer .container {
+    max-width: 850px;
+}
+
+.support-disclaimer h2 {
+    margin-bottom: 25px;
+}
+
+.support-disclaimer p {
+    margin-bottom: 18px;
+
+    line-height: 1.8;
+}
+
+
+/* Responsive */
+
+@media (max-width: 850px) {
+
+    .support-resource {
+        grid-template-columns: 45px 1fr;
+    }
+
+    .support-actions {
+        grid-column: 2;
+    }
+
+    .support-two-column {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .app-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .support-hero {
+        padding: 150px 0 75px;
+    }
+
+    .emergency-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .support-resource {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .support-actions {
+        grid-column: 1;
+    }
+
+    .app-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
