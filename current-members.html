@@ -1,60 +1,299 @@
-<section class="section">
+<!DOCTYPE html>
+<html lang="en">
 
-    <div class="container">
+<head>
+    <meta charset="UTF-8">
 
-        <div class="current-member-list">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-            <!-- CURRENT MEMBER 1 -->
+    <title>Current Members | GCYMHA</title>
 
-            <article class="current-member">
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-                <div class="member-initials">
-                    HL
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="site-header">
+
+        <nav class="navbar container">
+
+            <a href="index.html" class="brand">
+
+                <img
+                    src="assets/images/logo.png"
+                    alt="GCYMHA Logo"
+                    class="brand-logo"
+                >
+
+                <span class="brand-text">
+                    Global Chinese Youth
+                    <br>
+                    Mental Health Association
+                </span>
+
+            </a>
+
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+
+            <div class="nav-links" id="navLinks">
+
+                <a href="index.html#about">
+                    About
+                </a>
+
+                <a href="index.html#programs">
+                    Programs
+                </a>
+
+                <a href="index.html#events">
+                    Events
+                </a>
+
+                <a href="index.html#resources">
+                    Resources
+                </a>
+
+
+                <div class="nav-dropdown">
+
+                    <button class="dropdown-button">
+                        Members ▾
+                    </button>
+
+                    <div class="dropdown-menu">
+
+                        <a href="current-members.html">
+                            Current Members
+                        </a>
+
+                        <a href="past-members.html">
+                            Past Members & Alumni
+                        </a>
+
+                    </div>
+
                 </div>
 
-                <div class="current-member-info">
-                    <h2>Haoyu Li</h2>
 
-                    <p class="member-role">
-                        IT Support & Website Developer
-                    </p>
+                <a
+                    href="index.html#contact"
+                    class="nav-button"
+                >
+                    Get Involved
+                </a>
 
-                    <p>
-                        Senior undergraduate student at the
-                        University of California, Riverside.
-                    </p>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             PAGE HEADER
+        ========================== -->
+
+        <section class="members-hero">
+
+            <div class="container">
+
+                <p class="section-label">
+                    OUR COMMUNITY
+                </p>
+
+                <h1>
+                    Current Members
+                </h1>
+
+                <p>
+                    Meet the students and volunteers currently
+                    contributing to GCYMHA.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CURRENT MEMBERS
+        ========================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="current-member-list">
+
+
+                    <!-- CURRENT MEMBER 1 -->
+
+                    <article class="current-member">
+
+                        <div class="member-initials">
+                            HL
+                        </div>
+
+                        <div class="current-member-info">
+
+                            <h2>
+                                Haoyu Li
+                            </h2>
+
+                            <p class="member-role">
+                                IT Support & Website Developer
+                            </p>
+
+                            <p>
+                                Senior undergraduate student at the
+                                University of California, Riverside.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CURRENT MEMBER 2 -->
+
+                    <article class="current-member">
+
+                        <div class="member-initials">
+                            XZ
+                        </div>
+
+                        <div class="current-member-info">
+
+                            <h2>
+                                Xingliang Zhao
+                            </h2>
+
+                            <p class="member-role">
+                                Creative Content Designer
+                            </p>
+
+                            <p>
+                                Sophomore undergraduate student at
+                                California State University, Fullerton.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
                 </div>
 
-            </article>
+            </div>
+
+        </section>
+
+    </main>
 
 
-            <!-- CURRENT MEMBER 2 -->
+    <!-- =========================
+         FOOTER
+    ========================== -->
 
-            <article class="current-member">
+    <footer class="footer">
 
-                <div class="member-initials">
-                    XZ
-                </div>
+        <div class="container footer-grid">
 
-                <div class="current-member-info">
-                    <h2>Xingliang Zhao</h2>
+            <div>
 
-                    <p class="member-role">
-                        Creative Content Designer
-                    </p>
+                <a href="index.html" class="footer-brand">
+                    GCYMHA
+                </a>
 
-                    <p>
-                        Sophomore undergraduate student at
-                        California State University, Fullerton.
-                    </p>
-                </div>
+                <p>
+                    Global Chinese Youth Mental Health Association
+                </p>
 
-            </article>
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Explore
+                </h3>
+
+                <a href="index.html#about">
+                    About
+                </a>
+
+                <a href="index.html#programs">
+                    Programs
+                </a>
+
+                <a href="index.html#events">
+                    Events
+                </a>
+
+                <a href="index.html#resources">
+                    Resources
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Members
+                </h3>
+
+                <a href="current-members.html">
+                    Current Members
+                </a>
+
+                <a href="past-members.html">
+                    Past Members & Alumni
+                </a>
+
+            </div>
 
         </div>
 
-    </div>
 
-</section>
+        <div class="container footer-bottom">
 
-</section>
+            <p>
+                © <span id="year"></span>
+                Global Chinese Youth Mental Health Association.
+            </p>
+
+            <p>
+                Mental health information provided on this website
+                is educational and is not a substitute for
+                professional care.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
