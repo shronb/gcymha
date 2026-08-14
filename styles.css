@@ -1248,89 +1248,162 @@ p {
 
 .members-hero {
     padding: 180px 0 90px;
-
     background: var(--cream);
 }
 
 .members-hero h1 {
     font-size: clamp(3rem, 6vw, 5.5rem);
-
     letter-spacing: -0.05em;
-
     margin-bottom: 20px;
 }
 
 .members-hero p:last-child {
     max-width: 650px;
-
     font-size: 1.1rem;
 }
 
 
-.members-grid {
+/* =====================================
+   CURRENT MEMBERS
+===================================== */
+
+.current-member-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.current-member {
     display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 30px;
 
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
+    align-items: start;
 
-    gap: 28px;
+    padding: 40px 0;
+
+    border-bottom: 1px solid var(--line);
 }
 
-
-.member-card {
-    overflow: hidden;
-
-    background: white;
-
-    border: 1px solid var(--line);
-
-    border-radius: 8px;
+.current-member:first-child {
+    border-top: 1px solid var(--line);
 }
 
+.member-initials {
+    width: 70px;
+    height: 70px;
 
-.member-card img {
-    width: 100%;
-    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    object-fit: cover;
+    border-radius: 50%;
+
+    background: var(--light-blue);
+    color: var(--navy);
+
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
 }
 
-
-.member-card-content {
-    padding: 28px;
+.current-member-info h2 {
+    margin-bottom: 7px;
+    font-size: 1.6rem;
 }
-
-
-.member-card h2 {
-    font-size: 1.4rem;
-
-    margin-bottom: 8px;
-}
-
 
 .member-role {
+    margin-bottom: 12px;
+
     color: var(--blue);
 
     font-size: 0.85rem;
     font-weight: 700;
 
-    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.current-member-info > p:last-child {
+    max-width: 600px;
 }
 
 
-@media (max-width: 900px) {
+/* =====================================
+   PAST MEMBERS & ALUMNI
+===================================== */
 
-    .members-grid {
-        grid-template-columns: 1fr 1fr;
+.member-group {
+    margin-bottom: 100px;
+}
+
+.member-group:last-child {
+    margin-bottom: 0;
+}
+
+.member-group-heading {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+
+    align-items: end;
+
+    margin-bottom: 35px;
+}
+
+.member-group-heading h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.past-member-list {
+    border-top: 1px solid var(--line);
+}
+
+.past-member {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 50px;
+
+    padding: 32px 0;
+
+    border-bottom: 1px solid var(--line);
+}
+
+.past-member-header h3 {
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+}
+
+.member-bio {
+    max-width: 700px;
+
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+
+/* =====================================
+   MEMBERS MOBILE
+===================================== */
+
+@media (max-width: 700px) {
+
+    .current-member {
+        grid-template-columns: 60px 1fr;
+        gap: 20px;
     }
 
-}
+    .member-initials {
+        width: 52px;
+        height: 52px;
 
+        font-size: 0.8rem;
+    }
 
-@media (max-width: 600px) {
-
-    .members-grid {
+    .member-group-heading,
+    .past-member {
         grid-template-columns: 1fr;
+        gap: 15px;
     }
 
 }
