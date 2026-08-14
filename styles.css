@@ -1420,3 +1420,366 @@ p {
     }
 
 }
+/* =====================================
+   FOUNDER'S STORY
+===================================== */
+
+.story-hero {
+    padding: 200px 0 110px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f7f5f0 0%,
+            #eef5f7 100%
+        );
+}
+
+
+.story-hero-inner {
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+
+    gap: 80px;
+
+    align-items: end;
+}
+
+
+.story-hero .section-label {
+    grid-column: 1 / -1;
+}
+
+
+.story-hero h1 {
+    max-width: 850px;
+
+    font-size: clamp(4rem, 8vw, 7.5rem);
+
+    letter-spacing: -0.065em;
+    line-height: 0.95;
+}
+
+
+.story-hero h1 span {
+    color: var(--blue);
+}
+
+
+.story-intro {
+    max-width: 440px;
+
+    padding-bottom: 10px;
+}
+
+
+.story-date {
+    margin-bottom: 20px;
+
+    color: var(--text);
+
+    font-size: 0.8rem;
+    font-weight: 800;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+
+.story-intro p:last-child {
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
+
+
+
+/* =====================================
+   STORY BODY
+===================================== */
+
+.story-section {
+    padding: 120px 0;
+}
+
+
+.story-layout {
+    display: grid;
+
+    grid-template-columns: 250px minmax(0, 760px);
+
+    justify-content: center;
+
+    gap: 100px;
+
+    align-items: start;
+}
+
+
+.story-sidebar {
+    position: sticky;
+
+    top: 130px;
+
+    padding-top: 10px;
+
+    border-top: 2px solid var(--blue);
+}
+
+
+.story-sidebar-label {
+    margin: 18px 0 15px;
+
+    color: var(--blue);
+
+    font-size: 0.72rem;
+    font-weight: 800;
+
+    letter-spacing: 0.15em;
+}
+
+
+.story-sidebar p:last-child {
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+
+.story-article {
+    min-width: 0;
+}
+
+
+.story-article > p {
+    margin-bottom: 28px;
+
+    color: #4f5b63;
+
+    font-size: 1.08rem;
+    line-height: 1.9;
+}
+
+
+.story-article .story-lead {
+    margin-bottom: 50px;
+
+    color: var(--text);
+
+    font-size: 1.45rem;
+    line-height: 1.75;
+}
+
+
+.story-article h2 {
+    margin: 85px 0 30px;
+
+    color: var(--navy);
+
+    font-size: clamp(2rem, 4vw, 3.3rem);
+
+    letter-spacing: -0.04em;
+}
+
+
+
+/* =====================================
+   STORY QUOTES
+===================================== */
+
+.story-quote {
+    margin: 65px 0;
+
+    padding: 10px 0 10px 35px;
+
+    border-left: 4px solid var(--navy);
+}
+
+
+.story-quote p {
+    color: var(--navy);
+
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+
+    font-weight: 600;
+
+    line-height: 1.45;
+
+    letter-spacing: -0.025em;
+}
+
+
+.story-quote-blue {
+    border-left-color: var(--blue);
+}
+
+
+.story-quote-blue p {
+    color: var(--blue);
+}
+
+
+
+/* =====================================
+   STORY MISSION
+===================================== */
+
+.story-mission {
+    margin: 85px 0;
+
+    padding: 55px;
+
+    background: var(--cream);
+
+    border-radius: 6px;
+}
+
+
+.story-mission h2 {
+    margin: 0 0 30px;
+
+    font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+
+.story-mission > p:not(.section-label) {
+    margin-bottom: 22px;
+
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+
+.story-ending {
+    margin-top: 70px;
+
+    padding-top: 45px;
+
+    border-top: 1px solid var(--line);
+}
+
+
+.story-ending p {
+    margin-bottom: 25px;
+
+    color: var(--text);
+
+    font-size: 1.25rem;
+    line-height: 1.8;
+}
+
+
+
+/* =====================================
+   STORY END CTA
+===================================== */
+
+.story-next {
+    padding: 110px 0;
+
+    color: white;
+
+    background: var(--navy);
+}
+
+
+.story-next-inner {
+    display: grid;
+
+    grid-template-columns: 1.2fr 0.8fr;
+
+    gap: 100px;
+
+    align-items: center;
+}
+
+
+.story-next h2 {
+    max-width: 650px;
+}
+
+
+.story-next p:not(.section-label) {
+    margin-bottom: 30px;
+
+    color: rgba(255,255,255,0.72);
+
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
+
+
+
+/* =====================================
+   STORY RESPONSIVE
+===================================== */
+
+@media (max-width: 900px) {
+
+    .story-hero-inner {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+
+    .story-layout {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+
+    .story-sidebar {
+        position: static;
+
+        max-width: 600px;
+    }
+
+
+    .story-next-inner {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .story-hero {
+        padding: 150px 0 75px;
+    }
+
+
+    .story-hero h1 {
+        font-size: 3.8rem;
+    }
+
+
+    .story-section {
+        padding: 75px 0;
+    }
+
+
+    .story-article .story-lead {
+        font-size: 1.25rem;
+    }
+
+
+    .story-article > p {
+        font-size: 1rem;
+    }
+
+
+    .story-quote {
+        margin: 50px 0;
+
+        padding-left: 22px;
+    }
+
+
+    .story-mission {
+        padding: 35px 25px;
+    }
+
+}
