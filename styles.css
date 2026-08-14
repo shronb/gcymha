@@ -2513,3 +2513,220 @@ p {
     }
 
 }
+/* =====================================
+   EVENTS DROPDOWN GROUPS
+===================================== */
+
+.events-dropdown {
+    min-width: 230px;
+}
+
+.dropdown-section-label {
+    padding: 10px 16px 6px;
+
+    color: var(--blue);
+
+    font-size: 0.68rem;
+    font-weight: 800;
+
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    cursor: default;
+}
+
+.dropdown-divider {
+    height: 1px;
+
+    margin: 6px 0;
+
+    background: var(--line);
+}
+/* =====================================
+   EVENT ARCHIVE PAGES
+===================================== */
+
+.past-events-grid {
+    display: grid;
+    gap: 55px;
+}
+
+
+.past-event-card {
+    overflow: hidden;
+
+    background: white;
+
+    border: 1px solid var(--line);
+
+    border-radius: 8px;
+}
+
+
+.past-event-image img {
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+}
+
+
+.past-event-content {
+    padding: 50px;
+}
+
+
+.event-meta {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px 25px;
+
+    margin-bottom: 30px;
+
+    color: var(--muted);
+
+    font-size: 0.72rem;
+    font-weight: 800;
+
+    letter-spacing: 0.11em;
+}
+
+
+.event-type {
+    color: var(--blue);
+}
+
+
+.past-event-content h2 {
+    max-width: 850px;
+
+    margin-bottom: 25px;
+
+    font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+
+.past-event-content h3 {
+    margin: 50px 0 20px;
+
+    font-size: 1.5rem;
+}
+
+
+.past-event-content > p {
+    max-width: 850px;
+
+    margin-bottom: 20px;
+
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+
+.event-recap-list {
+    max-width: 850px;
+
+    margin: 0 0 45px 22px;
+
+    color: var(--muted);
+}
+
+
+.event-recap-list li {
+    margin-bottom: 14px;
+
+    padding-left: 5px;
+
+    line-height: 1.7;
+}
+
+
+.event-gallery {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-top: 45px;
+}
+
+
+.event-gallery img {
+    height: 260px;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+}
+
+
+
+/* UPCOMING EVENTS */
+
+.coming-soon-page {
+    min-height: 80vh;
+
+    padding: 200px 0 120px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--cream),
+            var(--light-blue)
+        );
+}
+
+
+.coming-soon-inner {
+    text-align: center;
+}
+
+
+.coming-soon-inner h1 {
+    margin-bottom: 25px;
+
+    font-size: clamp(3.5rem, 7vw, 6.5rem);
+
+    letter-spacing: -0.055em;
+}
+
+
+.coming-soon-inner > p:not(.section-label) {
+    margin: 0 auto 35px;
+
+    max-width: 650px;
+
+    font-size: 1.25rem;
+}
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 750px) {
+
+    .past-event-image img {
+        height: 320px;
+    }
+
+
+    .past-event-content {
+        padding: 30px 24px;
+    }
+
+
+    .event-gallery {
+        grid-template-columns: 1fr;
+    }
+
+
+    .event-gallery img {
+        height: 300px;
+    }
+
+}
