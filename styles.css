@@ -1191,3 +1191,146 @@ p {
     }
 
 }
+/* =====================================
+   MEMBERS DROPDOWN
+===================================== */
+
+.nav-dropdown {
+    position: relative;
+}
+
+.dropdown-button {
+    border: 0;
+    background: transparent;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    color: inherit;
+}
+
+.dropdown-menu {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    min-width: 190px;
+
+    padding: 10px 0;
+    margin-top: 12px;
+
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown-menu a {
+    display: block;
+
+    padding: 11px 18px;
+
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background: var(--cream);
+}
+
+.nav-dropdown:hover .dropdown-menu {
+    display: block;
+}
+/* =====================================
+   MEMBERS PAGES
+===================================== */
+
+.members-hero {
+    padding: 180px 0 90px;
+
+    background: var(--cream);
+}
+
+.members-hero h1 {
+    font-size: clamp(3rem, 6vw, 5.5rem);
+
+    letter-spacing: -0.05em;
+
+    margin-bottom: 20px;
+}
+
+.members-hero p:last-child {
+    max-width: 650px;
+
+    font-size: 1.1rem;
+}
+
+
+.members-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 28px;
+}
+
+
+.member-card {
+    overflow: hidden;
+
+    background: white;
+
+    border: 1px solid var(--line);
+
+    border-radius: 8px;
+}
+
+
+.member-card img {
+    width: 100%;
+    height: 330px;
+
+    object-fit: cover;
+}
+
+
+.member-card-content {
+    padding: 28px;
+}
+
+
+.member-card h2 {
+    font-size: 1.4rem;
+
+    margin-bottom: 8px;
+}
+
+
+.member-role {
+    color: var(--blue);
+
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 900px) {
+
+    .members-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .members-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
